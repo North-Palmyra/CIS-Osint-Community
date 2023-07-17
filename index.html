@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script src="static/js/vivagraph.min.js"></script>
+    <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+<a class="footer" target="_blank" href="https://github.com/tgscan/ru-osint-infosec-map">Сделано на базе ru-osint-infosec-map</a>
+<div id="box"></div>
+<script src="static/data/nodes.js"></script>
+<script>
+function formatTgAnchor(url) {
+    var isTme = url && url.indexOf('t.me') > -1;
+    if (url) {
+        if (isTme) {
+            var ret = url.replace(/https:\/\/t.me\//, '');
+            ret = '@' + ret;
+        } else {
+            var ret = url
+                .replace(/https:\/\//, '')
+                .replace(/^www\./, '');
+        }
+        return ret;
+    } else {
+        return null;
+    }
+}
+
+function render(nodes) {
+    var graph = Viva.Graph.graph();
+    var layout = Viva.Graph.Layout.forceDirected(graph, {
+        springLength : 250,
+        //dragCoeff : 0.02,
+        gravity : -110,
+        theta: 0.65,
+        springCoeff : 0.0005,
+    });
+    nodes.forEach(elem => {
+        graph.addNode(
+            elem.id, {
+                imageUrl: elem.imageUrl,
+                url: elem.url,
+                name: elem.name
+            }
+        );
+    });
+    nodes.forEach(elem => {
+        elem.links.forEach(targetId => {
+            graph.addLink(elem.id, targetId);
+        });
+    })
+    var graphics = Viva.Graph.View.svgGraphics();
+    var nodeSize = 24;
+    graphics.node(function(node) {
+        var ui = Viva.Graph.svg('g');
+        console.log(node);
+        if (node.data.name) {
+            var capText = node.data.name;
+        } else {
+            var capText = '';
+        }
+        var caption = Viva.Graph.svg('text')
+            .attr('y', '12px')
+            .attr('x', '38px')
+            .text(capText);
+        var link = Viva.Graph.svg('text')
+            .attr('y', '32px')
+            .attr('x', '38px')
+            .attr('fill', 'blue')
+            .text(formatTgAnchor(node.data.url));
+        imageUrl = node.data.imageUrl;
+
+        var img = Viva.Graph.svg('image')
+             .attr('width', 32)
+             .attr('height', 32)
+             .link(imageUrl);
+        ui.append(img);
+        ui.append(caption);
+        ui.append(link);
+        link.addEventListener("click", function() {
+            window.open(node.data.url, '_blank');
+        });
+        return ui;
+    });
+    graphics.placeNode(function(node, pos) {
+        node.attr('transform',
+            'translate(' + 
+                (pos.x - nodeSize/2) + ',' + (pos.y - nodeSize/2) + ')'
+        );
+    });
+    var renderer = Viva.Graph.View.renderer(graph, {
+        container: document.getElementById('box'),
+        graphics: graphics,
+        layout: layout
+    });
+    renderer.run();
+}
+render(dataNodes);
+</script>
+</body>
+</html>
