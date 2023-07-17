@@ -25,15 +25,6 @@ dataNodes = [
         "url": null
     },
     {
-        "id": "serrg",
-        "name": "Ser Iv",
-        "links": [
-            "palmyra"
-        ],
-        "imageUrl": "static/logo/serrg.jpg",
-        "url": "https://t.me/serrg"
-    },
-    {
         "id": "intelligence_guild",
         "name": "Северная Пальмира",
         "links": [
