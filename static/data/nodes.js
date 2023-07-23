@@ -137,7 +137,7 @@ dataNodes = [
         "id": "CyberScoutszametki",
         "name": "Squad of the CyberScouts",
         "links": [
-            "intelligence_guild"
+            "osint"
         ],
         "imageUrl": "static/logo/CyberScoutszametki.jpg",
         "url": "https://t.me/CyberScoutszametki"
@@ -757,5 +757,68 @@ dataNodes = [
         ],
         "imageUrl": "static/logo/user.jpg",
         "url": null
+    },
+    {
+        "id": "forensictools",
+        "name": "Investigation & Forensic TOOLS",
+        "links": [
+            "osint"
+        ],
+        "imageUrl": "static/logo/forensictools.jpg",
+        "url": "https://t.me/forensictools"
+    },
+    {
+        "id": "BeholderIsHereHub",
+        "name": "BeholderIsHere Media HUB",
+        "links": [
+            "forensictools"
+        ],
+        "imageUrl": "static/logo/BeholderIsHereHub.jpg",
+        "url": "https://t.me/BeholderIsHereHub"
+    },
+    {
+        "id": "PDAYflashdrive",
+        "name": "ФЛЭШКА \"Судного Дня\"",
+        "links": [
+            "forensictools"
+        ],
+        "imageUrl": "static/logo/PDAYflashdrive.jpg",
+        "url": "https://t.me/PDAYflashdrive"
+    },
+    {
+        "id": "netsurvivalist",
+        "name": "Net Survivalist",
+        "links": [
+            "forensictools"
+        ],
+        "imageUrl": "static/logo/netsurvivalist.jpg",
+        "url": "https://t.me/netsurvivalist"
+    },
+    {
+        "id": "Beholderishere",
+        "name": "Beholder Is Here",
+        "links": [
+            "netsurvivalist"
+        ],
+        "imageUrl": "static/logo/Beholderishere.jpg",
+        "url": "https://t.me/Beholderishere"
+    },
+    {
+        "id": "Beholderishere",
+        "name": "Beholder Is Here",
+        "links": [
+            "PDAYflashdrive"
+        ],
+        "imageUrl": "static/logo/Beholderishere.jpg",
+        "url": "https://t.me/Beholderishere"
+    },
+    {
+        "id": "Beholderishere",
+        "name": "Beholder Is Here",
+        "links": [
+            "BeholderIsHereHub"
+        ],
+        "imageUrl": "static/logo/Beholderishere.jpg",
+        "url": "https://t.me/Beholderishere"
     }
 ];
