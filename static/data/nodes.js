@@ -739,5 +739,23 @@ dataNodes = [
         ],
         "imageUrl": "static/logo/ibederov.jpg",
         "url": "https://t.me/ibederov"
+    },
+    {
+        "id": "pandora_intelligence",
+        "name": "Pandora's box",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/pandora_intelligence.jpg",
+        "url": "https://t.me/pandora_intelligence"
+    },
+    {
+        "id": "pandora_intelligence_user",
+        "name": "???",
+        "links": [
+            "pandora_intelligence"
+        ],
+        "imageUrl": "static/logo/user.jpg",
+        "url": null
     }
 ];
