@@ -49,6 +49,7 @@ def action_getlogo(username, html=None):
 
 def action_add(username, parent):
     if username == '???':
+        username = f'{parent}_user'
         name = '???'
         logo_path = 'static/logo/user.jpg'
         url = None
@@ -64,20 +65,20 @@ def action_add(username, parent):
         'imageUrl': logo_path,
         'url': url,
     }
-    with open(NODES_JSON_FILE) as inp:
+    with open(NODES_JSON_FILE, encoding='utf-8') as inp:
         data = json.load(inp)
     print('Loaded %d items from JSON file' % len(data))
     data.append(item)
     print('Saved %d items to JSON file' % len(data))
-    with open(NODES_JSON_FILE, 'w') as out:
+    with open(NODES_JSON_FILE, 'w', encoding='utf-8') as out:
         out.write(json.dumps(data, indent=4, ensure_ascii=False))
     action_compile()
 
 
 def action_compile():
-    with open(NODES_JSON_FILE) as inp:
+    with open(NODES_JSON_FILE, encoding='utf-8') as inp:
         data = json.load(inp)
-    with open(NODES_COMPILED_FILE, 'w') as out:
+    with open(NODES_COMPILED_FILE, 'w', encoding='utf-8') as out:
         json_data = json.dumps(data, indent=4, ensure_ascii=False)
         out.write('dataNodes = %s;' % json_data)
     print('Saved %d items to JS compiled file %s' % (
