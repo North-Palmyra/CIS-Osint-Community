@@ -820,5 +820,95 @@
         ],
         "imageUrl": "static/logo/Beholderishere.jpg",
         "url": "https://t.me/Beholderishere"
+    },
+    {
+        "id": "infobez",
+        "name": "Инфобез",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/infobez.jpg",
+        "url": "https://t.me/infobase999"
+    },
+    {
+        "id": "infobez_user",
+        "name": "???",
+        "links": [
+            "infobez"
+        ],
+        "imageUrl": "static/logo/user.jpg",
+        "url": null
+    },
+    {
+        "id": "mahairodon_сhannel",
+        "name": "Буферная зона",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/mahairodon.jpg",
+        "url": "https://t.me/mahairodon"
+    },
+    {
+        "id": "mahairodon_user",
+        "name": "Mahairodon",
+        "links": [
+            "mahairodon_сhannel"
+        ],
+        "imageUrl": "static/logo/user.jpg",
+        "url": null
+    },
+    {
+        "id": "socool",
+        "name": "SOCool",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/socool.jpg",
+        "url": "https://t.me/SOCool"
+    },
+    {
+        "id": "socool_user",
+        "name": "???",
+        "links": [
+            "socool"
+        ],
+        "imageUrl": "static/logo/user.jpg",
+        "url": null
+    },
+    {
+        "id": "osint_ru_events",
+        "name": "OSINT RU мероприятия",
+        "links": [
+            "osint"
+        ],
+        "imageUrl": "static/logo/osint_ru_events.jpg",
+        "url": "https://t.me/osint_ru_events"
+    },
+    {
+        "id": "soxoj_insides",
+        "name": "Soxoj insides",
+        "links": [
+            "soxoj"
+        ],
+        "imageUrl": "static/logo/user.jpg",
+        "url": null
+    },
+    {
+        "id": "tatar_osint_mindset",
+        "name": "tatar OSINT mindset",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/tatar_osint_mindset.jpg",
+        "url": "https://t.me/+dHYUturlVFo0MzIy"
+    },
+    {
+        "id": "osint_mindset_en",
+        "name": "OSINT mindset [ENG]",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/osint_mindset.jpg",
+        "url": "https://t.me/osint_mindset"
     }
 ]
