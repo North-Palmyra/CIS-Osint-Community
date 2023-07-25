@@ -1,2 +1,3 @@
-# russian-osint-community
- The graph is current as of 20/07/2023.
+# Osint сообщество стран СНГ
+
+Посмотреть схему: https://north-palmyra.github.io/CIS-Osint-Community/
