@@ -8,7 +8,6 @@
 <a class="footer" target="_blank" href="https://t.me/intelligence_guild">Сделано специалистами @Intelligence_Guild</a>
 <a class="footer_tgscan" target="_blank" href="https://github.com/tgscan/ru-osint-infosec-map">Сделано на базе ru-osint-infosec-map</a>
 <div id="box"></div>
-<script src="static/data/nodes.js"></script>
 <script>
 function formatTgAnchor(url) {
     var isTme = url && url.indexOf('t.me') > -1;
@@ -96,7 +95,21 @@ function render(nodes) {
     });
     renderer.run();
 }
-render(dataNodes);
+
+
+fetch('./data/nodes.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("HTTP error " + response.status);
+        }
+        return response.json()
+    })
+    .then(json => {
+        render(json);
+    })
+    .catch(() => {
+        document.getElementById('box').innerHTML = 123;
+    });
 </script>
 </body>
 </html>
