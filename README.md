@@ -2,7 +2,7 @@
 Посмотреть схему: https://north-palmyra.github.io/CIS-Osint-Community/
 
 ## Данные
-Хрранятся в файле `data/nodes.json` в виде списка узлов. Формат узла:
+Хранятся в файле `data/nodes.json` в виде списка узлов. Формат узла:
 ```json
 {
     "id": "intelligence_guild",
