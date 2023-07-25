@@ -16,7 +16,6 @@ RE_TME_TITLE = re.compile(
 )
 USER_PLACEHOLDER_IMAGE = 'static/logo/user.jpg'
 NODES_JSON_FILE = 'data/nodes.json'
-NODES_COMPILED_FILE = 'static/data/nodes.js'
 
 
 def build_tme_url(username):
@@ -72,18 +71,6 @@ def action_add(username, parent):
     print('Saved %d items to JSON file' % len(data))
     with open(NODES_JSON_FILE, 'w', encoding='utf-8') as out:
         out.write(json.dumps(data, indent=4, ensure_ascii=False))
-    action_compile()
-
-
-def action_compile():
-    with open(NODES_JSON_FILE, encoding='utf-8') as inp:
-        data = json.load(inp)
-    with open(NODES_COMPILED_FILE, 'w', encoding='utf-8') as out:
-        json_data = json.dumps(data, indent=4, ensure_ascii=False)
-        out.write('dataNodes = %s;' % json_data)
-    print('Saved %d items to JS compiled file %s' % (
-        len(data), NODES_COMPILED_FILE
-    ))
 
 
 def main(**kwargs):
@@ -96,8 +83,6 @@ def main(**kwargs):
         username = sys.argv[2]
         parent = sys.argv[3]
         action_add(username, parent)
-    elif action == 'compile':
-        action_compile()
     else:
         sys.stderr.write('Unknown action: %s' % action)
         sys.exit(1)
