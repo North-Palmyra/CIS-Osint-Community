@@ -2,6 +2,7 @@
     {
         "id": "osint",
         "name": "OSINT",
+        "noUpdate": true,
         "links": [],
         "imageUrl": "static/logo/house.png",
         "url": null
@@ -644,6 +645,7 @@
     {
         "id": "zal_slavy",
         "name": "Зал Славы",
+        "noUpdate": true,
         "links": [],
         "imageUrl": "static/logo/house.png",
         "url": null
@@ -660,6 +662,7 @@
     {
         "id": "???Osint_prognil",
         "name": "Легенда",
+        "noUpdate": true,
         "links": [
             "Osint_prognil"
         ],
