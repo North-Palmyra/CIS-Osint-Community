@@ -643,18 +643,10 @@
         "url": "https://t.me/admOSINTBY"
     },
     {
-        "id": "zal_slavy",
-        "name": "Зал Славы",
-        "noUpdate": true,
-        "links": [],
-        "imageUrl": "static/logo/house.png",
-        "url": null
-    },
-    {
         "id": "Osint_prognil",
         "name": "Прогнивший OSINT",
         "links": [
-            "zal_slavy"
+            "osint"
         ],
         "imageUrl": "static/logo/Osint_prognil.jpg",
         "url": "https://t.me/Osint_prognil"
@@ -825,12 +817,93 @@
         "url": "https://t.me/Beholderishere"
     },
     {
-        "id": "SoxojInsides",
+        "id": "infobez",
+        "name": "Инфобез",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/infobez.jpg",
+        "url": "https://t.me/infobase999"
+    },
+    {
+        "id": "infobez_user",
+        "name": "???",
+        "links": [
+            "infobez"
+        ],
+        "imageUrl": "static/logo/infobez_user.jpg",
+        "url": null
+    },
+    {
+        "id": "mahairodon_channel",
+        "name": "Буферная зона",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/mahairodon_channel.jpg",
+        "url": "https://t.me/mahairodon"
+    },
+    {
+        "id": "mahairodon_user",
+        "name": "Mahairodon",
+        "links": [
+            "mahairodon_channel"
+        ],
+        "imageUrl": "static/logo/mahairodon_user.jpg",
+        "url": null
+    },
+    {
+        "id": "socool",
+        "name": "SOCool",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/socool.jpg",
+        "url": "https://t.me/SOCool"
+    },
+    {
+        "id": "socool_user",
+        "name": "???",
+        "links": [
+            "socool"
+        ],
+        "imageUrl": "static/logo/socool_user.jpg",
+        "url": null
+    },
+    {
+        "id": "osint_ru_events",
+        "name": "OSINT RU мероприятия",
+        "links": [
+            "osint"
+        ],
+        "imageUrl": "static/logo/osint_ru_events.jpg",
+        "url": "https://t.me/osint_ru_events"
+    },
+    {
+        "id": "soxoj_insides",
         "name": "Soxoj insides",
         "links": [
             "soxoj"
         ],
-        "imageUrl": "static/logo/SoxojInsides.jpg",
-        "url": "https://t.me/soxoj_insides"
+        "imageUrl": "static/logo/soxoj_insides.jpg",
+        "url": null
+    },
+    {
+        "id": "tatar_osint_mindset",
+        "name": "tatar OSINT mindset",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/tatar_osint_mindset.jpg",
+        "url": "https://t.me/+dHYUturlVFo0MzIy"
+    },
+    {
+        "id": "osint_mindset_en",
+        "name": "OSINT mindset [ENG]",
+        "links": [
+            "osint_mindset"
+        ],
+        "imageUrl": "static/logo/osint_mindset_en.jpg",
+        "url": "https://t.me/osint_mindset"
     }
 ]
