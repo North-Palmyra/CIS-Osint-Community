@@ -117,15 +117,6 @@
         "url": "https://t.me/r00t_owl"
     },
     {
-        "id": "human_hacking",
-        "name": "ОБМАНИ МЕНЯ",
-        "links": [
-            "intelligence_guild"
-        ],
-        "imageUrl": "static/logo/human_hacking.jpg",
-        "url": "https://t.me/human_hacking"
-    },
-    {
         "id": "fuckwebsec",
         "name": "xanax security",
         "links": [
@@ -160,15 +151,6 @@
         ],
         "imageUrl": "static/logo/fkshelL.jpg",
         "url": "https://t.me/fkshelL"
-    },
-    {
-        "id": "socialqueen",
-        "name": "Faith Lord",
-        "links": [
-            "human_hacking"
-        ],
-        "imageUrl": "static/logo/socialqueen.jpg",
-        "url": "https://t.me/socialqueen"
     },
     {
         "id": "osint_mindset",
