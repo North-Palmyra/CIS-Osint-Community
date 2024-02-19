@@ -805,5 +805,23 @@
         ],
         "imageUrl": "static/logo/Beholderishere.jpg",
         "url": "https://t.me/Beholderishere"
+    },
+    {
+        "id": "secur_researcher",
+        "name": "STEIN: ИБ, OSINT",
+        "links": [
+            "intelligence_guild"
+        ],
+        "imageUrl": "static/logo/secur_researcher.jpg",
+        "url": "https://t.me/secur_researcher"
+    },
+    {
+        "id": "jhorj_OSINT",
+        "name": "Jhorj OSINT",
+        "links": [
+            "1865751209"
+        ],
+        "imageUrl": "static/logo/jhorj_OSINT.jpg",
+        "url": "https://t.me/jhorj_OSINT"
     }
 ]
