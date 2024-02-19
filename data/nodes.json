@@ -805,5 +805,14 @@
         ],
         "imageUrl": "static/logo/Beholderishere.jpg",
         "url": "https://t.me/Beholderishere"
+    },
+    {
+        "id": "SoxojInsides",
+        "name": "Soxoj insides",
+        "links": [
+            "soxoj"
+        ],
+        "imageUrl": "static/logo/SoxojInsides.jpg",
+        "url": "https://t.me/soxoj_insides"
     }
 ]
